@@ -1,0 +1,217 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+* {
+    box-sizing: border-box;
+}
+
+.back-to-top {
+    right: 15px !important;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    display: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: black;
+    border-color: black;
+    opacity: 0.5;
+}
+
+.back-to-top:hover {
+    background-color: black;
+    border-color: black;
+    opacity: 1;
+}
+
+.title{
+  text-align: center;
+}
+
+.logo{
+  height: 50%;
+  width: 10%;
+}
+
+/* https://codepen.io/humbl3man/pen/BKgwwx */
+.animated {
+  animation-duration: 500ms;
+}
+
+.top-nav a:hover {
+    color: #EF233C;
+    border-color: #EF233C;
+  }
+
+.top-nav.scrolled {
+    background-color: #000 !important;
+    transition: background-color 200ms linear;
+}
+
+
+.top-hero {
+  background-color: #fafafa;
+  background-image: url("../images/poki-home.png");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  height: 100vh;
+  padding-top: 125px;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .top-hero {
+    min-height: 400px;
+    padding-top: 50px;
+  }
+  .top-hero h1 {
+    font-size: 36px;
+    margin-top: 50px;
+  }
+}
+
+.top-nav {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding:10px;
+}
+
+.top-nav ul {
+  float: right;
+  position: relative;
+  top:30px;
+}
+
+.top-nav a {
+  font-size: 18px;
+  color: #EDF2F4;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  padding: 0 0 5px;
+  transition: .25s;
+  margin: 0 10px 0 10px;
+}
+
+.mobile-nav{
+  display: none;
+}
+
+/* mobile navigation https://codepen.io/crushoftheyear/pen/redJdy */
+@media only screen and (max-width: 768px) {
+  .banner {
+    min-height: 400px;
+  }
+  .banner h1,
+  .banner h2 {
+    font-size: 20px;
+  }
+
+  .top-nav{
+    display:none;
+  }
+
+  .logo{
+    height: 75px;
+    width: 75px;
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: #fff;
+  }
+  body ul li {
+    list-style-type: none;
+  }
+
+  .mobile-nav {
+    background-color: #679EB9;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    display: grid;
+  }
+
+  ul#menu {
+    display: none;
+  }
+  ul#menu li a {
+    width: 100%;
+    display: block;
+    background-color: #679EB9;
+    color: #000;
+    font-size: 1.0em;
+    padding: 1.5em 1.6em;
+    transition: background 0.2s;
+    text-decoration: none;
+  }
+  ul#menu a:hover {
+    background-color: #4b85a2;
+  }
+
+  @media screen and (min-width: 2000px) {
+    .hamburger-container {
+      display: none;
+    }
+
+    .mobile-nav ul#menu {
+      display: inline;
+    }
+    .mobile-nav ul#menu li {
+      display: inline-block;
+      margin-right: -5px;
+    }
+  }
+  ul.hamburger li {
+    height: 5px;
+    background: black;
+    content: '';
+    position: relative;
+    transition: .25s ease-in-out;
+  }
+
+  .hidden {
+    opacity: 0;
+  }
+
+  .rot45deg {
+    transform: rotate(45deg);
+    top: 10px !important;
+  }
+
+  .rot-45deg {
+    transform: rotate(-45deg);
+  }
+
+  ul.hamburger {
+    display: block;
+  }
+  ul.hamburger li:nth-child(1) {
+    top: 0;
+  }
+  ul.hamburger li:nth-child(2) {
+    top: 5px;
+  }
+  ul.hamburger li:nth-child(3) {
+    top: 10px;
+  }
+
+  .hamburger-container {
+    width: 38px;
+    margin: 1.2em 1.6em;
+    cursor: pointer;
+    float: right;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+  }
+}
