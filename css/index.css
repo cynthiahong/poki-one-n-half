@@ -3,6 +3,39 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'DINCondensed';
+    src: url('../css/fonts/DINCondensed.ttf');
+}
+
+.list-inline-item, .title{
+  font-family: 'DINCondensed';
+}
+
+body, p{
+  font-family: 'Roboto', sans-serif;
+}
+
+h1{
+  margin: 10px !important;
+}
+
+.padding{
+  padding: 10px;
+}
+
+#map_container{
+  position: relative;
+}
+
+#map{
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 22.25%;
+    padding-top: 30px;
+    position: relative;
+}
+
 .back-to-top {
     right: 15px !important;
     cursor: pointer;
@@ -32,14 +65,18 @@
   width: 10%;
 }
 
+a:hover{
+  cursor: pointer;
+}
+
 /* https://codepen.io/humbl3man/pen/BKgwwx */
 .animated {
   animation-duration: 500ms;
 }
 
 .top-nav a:hover {
-    color: #EF233C;
-    border-color: #EF233C;
+    color: #fd6a35;
+    border-color: #fd6a35;
   }
 
 .top-nav.scrolled {
@@ -52,7 +89,7 @@
   background-color: #fafafa;
   background-image: url("../images/poki-home.png");
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   background-attachment: fixed;
   height: 100vh;
   padding-top: 125px;
@@ -134,7 +171,7 @@
   }
 
   .mobile-nav {
-    background-color: #679EB9;
+    background-color: #fd6a35;
     width: 100%;
     position: fixed;
     z-index: 10;
@@ -147,8 +184,8 @@
   ul#menu li a {
     width: 100%;
     display: block;
-    background-color: #679EB9;
-    color: #000;
+    background-color: #fd6a35;
+    color: #fff;
     font-size: 1.0em;
     padding: 1.5em 1.6em;
     transition: background 0.2s;
@@ -173,7 +210,7 @@
   }
   ul.hamburger li {
     height: 5px;
-    background: black;
+    background: white;
     content: '';
     position: relative;
     transition: .25s ease-in-out;
@@ -214,4 +251,82 @@
     right: 10px;
     top: 5px;
   }
+}
+
+.center{
+  text-align: center;
+}
+
+.button {
+    background-color: #000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+}
+
+footer{
+  padding:10px;
+}
+/*Change icons size here*/
+.social-icons .fa {
+  font-size: 1.8em;
+}
+/*Change icons circle size and color here*/
+.social-icons .fa {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #FFF;
+  color: rgba(255, 255, 255, 0.8);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icons.icon-circle .fa {
+  border-radius: 50%;
+}
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+.list-inline li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
+
+.social-icons .fa-facebook {
+  background-color: #3C599F;
+}
+.social-icons .fa-instagram {
+  background-color: #A1755C;
+}
+.social-icons .fa-yelp {
+  background-color: #CC2127;
+}
+.social-icons .fa:hover, .social-icons .fa:active {
+  color: #FFF;
+}
+
+
+
+.card {
+  box-shadow: 0px 0px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  padding:20px;
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
