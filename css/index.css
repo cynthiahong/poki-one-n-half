@@ -19,7 +19,17 @@ body, p{
 h1{
   margin: 10px !important;
 }
+/* mobile */
+@media only screen and (max-width: 768px) {
 
+  #map{
+    display: none;
+  }
+}
+
+.orange {
+  color: #fd6a35;
+}
 .padding{
   padding: 10px;
 }
@@ -31,7 +41,7 @@ h1{
 #map{
     height: 0;
     overflow: hidden;
-    padding-bottom: 22.25%;
+    padding-bottom: 50%;
     padding-top: 30px;
     position: relative;
 }
@@ -92,6 +102,18 @@ a:hover{
   background-position: center;
   background-attachment: fixed;
   height: 100vh;
+  padding-top: 125px;
+  display: flex;
+  align-items: center;
+}
+
+.top-hero-2 {
+  background-color: #fafafa;
+  background-image: url("../images/custom.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 50vh;
   padding-top: 125px;
   display: flex;
   align-items: center;
@@ -329,4 +351,8 @@ footer{
 
 .card:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.btn-lg{
+  border-radius: 2px !important;
 }
