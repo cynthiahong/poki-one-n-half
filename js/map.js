@@ -38,6 +38,7 @@
             "address": "9353 Clairemont Mesa Blvd. #M, San Diego, CA 92123",
             "phone":"Phone: +1 (858) 565-4280",
             "hours":"Hours: Monday - Friday 10am - 9pm </br> Saturday - Sunday 11am - 9pm",
+            "link": "https://goo.gl/maps/G7CA2i2MNdS2",
 		    }
 		]
 
@@ -77,7 +78,7 @@ var contentString = "hello world";
 						infoWindow.open(map, marker);
 					}
           else{
-					infoWindow.setContent('<div class="info-box"><h3>' + data.city + '</h3>'+ data.address + '</br>' + data.phone + " </br>" + data.hours);
+					infoWindow.setContent('<div class="info-box"><h4>' + data.city + '</h4><a href="'+ data.link + '">' + data.address + '</a></br>' + data.phone + " </br>" + data.hours);
 					infoWindow.open(map, marker, contentString);
         }
 				});

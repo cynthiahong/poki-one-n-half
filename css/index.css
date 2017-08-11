@@ -8,12 +8,13 @@
     src: url('../css/fonts/DINCondensed.ttf');
 }
 
-.list-inline-item, .title{
+.list-inline-item, .title, .card-heading, #menu li{
   font-family: 'DINCondensed';
 }
 
 body, p{
   font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 
 h1{
@@ -30,7 +31,7 @@ h1{
 .orange {
   color: #fd6a35;
 }
-.padding{
+.padding, .footer-copyright, ul.social-icons, .title{
   padding: 10px;
 }
 
@@ -68,11 +69,12 @@ h1{
 
 .title{
   text-align: center;
+  font-size: 40px;
 }
 
 .logo{
   height: 50%;
-  width: 10%;
+  width: 7%;
 }
 
 a:hover{
@@ -143,11 +145,11 @@ a:hover{
 .top-nav ul {
   float: right;
   position: relative;
-  top:30px;
+  top:20px;
 }
 
 .top-nav a {
-  font-size: 18px;
+  font-size: 20px;
   color: #EDF2F4;
   text-decoration: none;
   border-bottom: 3px solid transparent;
@@ -355,4 +357,17 @@ footer{
 
 .btn-lg{
   border-radius: 2px !important;
+}
+
+.card-heading{
+  font-size: 26px;
+  text-align: center;
+}
+
+#menu li{
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
 }
