@@ -97,7 +97,7 @@ a:hover{
     transition: background-color 200ms linear;
 }
 
-
+/* home page */
 .top-hero {
   background-color: #fafafa;
   background-image: url("../images/poki-home.png");
@@ -110,6 +110,7 @@ a:hover{
   align-items: center;
 }
 
+/* home page for custom bowls */
 .top-hero-2 {
   background-color: #fafafa;
   background-image: url("../images/custom.png");
@@ -122,6 +123,31 @@ a:hover{
   align-items: center;
 }
 
+/* contact page */
+.top-hero-3 {
+  background-color: #fafafa;
+  background-image: url("../images/poki-contact.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  padding-top: 125px;
+  display: flex;
+  align-items: center;
+}
+
+/* locations page */
+.top-hero-4 {
+  background-color: #fafafa;
+  background-image: url("../images/store.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 50vh;
+  padding-top: 125px;
+  display: flex;
+  align-items: center;
+}
 @media only screen and (max-width: 768px) {
   .top-hero {
     min-height: 400px;
